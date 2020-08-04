@@ -16,7 +16,6 @@ from sqlalchemy.sql import func
 
 
 app=Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:postgresql123@localhost/height_collector'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://tbkiutqxzauyis:d1d6a87a8cf43b15a803f80abaa360e464ec2ccb954de13639e257cfdda44886@ec2-35-175-155-248.compute-1.amazonaws.com:5432/d36cn2mo012c79?sslmode=require'
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db=SQLAlchemy(app)
